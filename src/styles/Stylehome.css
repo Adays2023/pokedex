@@ -1,0 +1,37 @@
+.Go{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+.poketv{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+.pokerush{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+.pokequest{
+  margin-left: 30px;
+  width: 300px;
+  height: 200px;
+}
+#poke{
+  display: flex;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  background-color: rgb(0, 255, 170);
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#poke:hover{
+  cursor: pointer;
+  color: white;
+  scale: 1.1;
+  background-color: rgb(101, 101, 101);
+}
