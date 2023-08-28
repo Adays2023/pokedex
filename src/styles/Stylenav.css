@@ -52,7 +52,7 @@ ul li{
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: red;
+    background-color: #dd3e54;
     transition: .4s ease;
     z-index: -1;
 } 
@@ -96,7 +96,7 @@ ul li{
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: blue;
+    background-color: #5B86E5;
     transition: .4s ease;
     z-index: -1;
 }

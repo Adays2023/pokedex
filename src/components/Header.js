@@ -3,11 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
 import '../styles/Headerstyle.css'
-
-//import 'swiper/css';
 import 'swiper/css/pagination';
-
-//import '../styles/prueba.css';
 import Home from '../pages/Home';
 
 function Header () {
