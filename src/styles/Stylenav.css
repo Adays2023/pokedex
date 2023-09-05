@@ -148,3 +148,158 @@ ul li{
     height: 100%;
     transition-delay: 0.4s; 
 }
+
+@media (max-width: 900px) {
+
+    .top{
+        background-color: rgb(205, 205, 205);
+    }
+    ul{
+        display: flex;
+        flex-direction: column;  
+    }
+    
+    ul li{
+        list-style-type: none;  
+    }
+    
+    .link{
+        color: black;
+        font-size: small;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+    }
+    
+    .Home {
+        font-size: 17px;
+        background: transparent;
+        border: none;
+        padding: 1em 2.5em;
+        color: red;
+        text-transform: uppercase;
+        position: relative;
+        transition: .5s ease;
+    }  
+    .Home::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: red;
+        transition: .5s ease;
+    }  
+    .Home:hover {
+        color: #1e1e2b;
+        transition-delay: .5s;
+        scale: 1.2;
+    } 
+    .Home:hover::before {
+        width: 100%;
+    }  
+    .Home::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: #dd3e54;
+        transition: .4s ease;
+        z-index: -1;
+    } 
+    .Home:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+    }
+    
+    .About {
+        font-size: 17px;
+        background: transparent;
+        border: none;
+        padding: 1em 1.5em;
+        color: blue;
+        text-transform: uppercase;
+        position: relative;
+        transition: .5s ease;
+    } 
+    .About::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: blue;
+        transition: .5s ease;
+    }
+    .About:hover {
+        color: #1e1e2b;
+        transition-delay: .5s;
+        scale: 1.2;
+    }
+    .About:hover::before {
+        width: 100%;
+    }
+    .About::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: #5B86E5;
+        transition: .4s ease;
+        z-index: -1;
+    }
+    .About:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+    }
+    
+    .poke {
+        font-size: 17px;
+        background: transparent;
+        border: none;
+        padding: 1em 1.5em;
+        color: yellow;
+        text-transform: uppercase;
+        position: relative;
+        transition: .5s ease;
+    } 
+    .poke::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: yellow;
+        transition: .5s ease;
+    }
+    .poke:hover {
+        color: #1e1e2b;
+        transition-delay: .5s;
+        scale: 1.2;
+    }
+    .poke:hover::before {
+        width: 100%;
+    }
+    .poke::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: yellow;
+        transition: .4s ease;
+        z-index: -1;
+    }
+    .poke:hover::after {
+        height: 100%;
+        transition-delay: 0.4s; 
+    }
+
+}

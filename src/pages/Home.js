@@ -28,19 +28,19 @@ import Header from '../components/Header';
 
         <SwiperSlide>
          <img className='Go' src='https://assets.pokemon.com/assets/cms2-es-xl/img/video-games/video-games/pokemon_go/pokemon-go-169.jpg'></img>
-         <a id='poke' href="https://www.pokemon.com/el/app/pokemon-go/" target="_blank">Pokémon Go</a>
+         <a id='poke' className='A1' href="https://www.pokemon.com/el/app/pokemon-go/" target="_blank">Pokémon Go</a>
         </SwiperSlide>
         <SwiperSlide>
          <img className='poketv' src='https://assets.pokemon.com/assets/cms2-es-xl/img/misc/pokemon-tv-app/pokemon-tv-app-169.png'></img>
-         <a id='poke' href="https://www.pokemon.com/el/app/tv-pokemon/" target="_blank">Pokémon TV</a>
+         <a id='poke' className='A2' href="https://www.pokemon.com/el/app/tv-pokemon/" target="_blank">Pokémon TV</a>
         </SwiperSlide>
         <SwiperSlide>
          <img className='pokerush'src='https://assets.pokemon.com/assets/cms2-es-xl/img/video-games/video-games/pokemon_rumble_rush/pokemon-rumble-rush-169.jpg'></img>
-         <a id='poke' href="https://www.pokemon.com/el/app/pokemon-rumble-rush/" target="_blank">Pokémon Rumble Rush</a>
+         <a id='poke' className='A3' href="https://www.pokemon.com/el/app/pokemon-rumble-rush/" target="_blank">Pokémon Rumble Rush</a>
         </SwiperSlide>
         <SwiperSlide>
          <img className='pokequest'src='https://assets.pokemon.com/assets/cms2-es-xl/img/video-games/video-games/pokemon_quest/pokemon-quest-169.jpg'></img>
-         <a id='poke' href="https://www.pokemon.com/el/app/pokemon-quest/" target="_blank">Pokémon Quest</a>
+         <a id='poke' className='A4' href="https://www.pokemon.com/el/app/pokemon-quest/" target="_blank">Pokémon Quest</a>
         </SwiperSlide>
 
       </div>

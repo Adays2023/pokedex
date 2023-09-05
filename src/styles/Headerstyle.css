@@ -54,3 +54,75 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 900px) {
+
+.mySwiper{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.2);
+    border: solid 1px #000000;
+    margin: 80px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    max-width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cardPokemon{
+    border-radius: 25px;    
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #C02425 20%, #F0CB35 48%, #ffffff 100%);
+    background-size: 200% 50%;
+    animation: gradient 10s ease infinite;
+    background-color: white;
+    width: 100px;
+    height: 150px;
+    
+}        
+   
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+        }
+
+    50% {
+        background-position: 100% 50%;
+        }
+
+    100% {
+        background-position: 0% 50%;
+        }
+}
+
+.cardPokemon:hover{
+    cursor: pointer;
+    scale: 1.1;
+}   
+    
+.imgPokemones{
+    height: 100px;
+    width: 100px;
+    justify-content: center;  
+}
+.namePokemon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(102, 102, 102);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+h3{
+    font-size: small;
+}    
+
+}

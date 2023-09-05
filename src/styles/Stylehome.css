@@ -35,3 +35,61 @@
   scale: 1.1;
   background-color: rgb(101, 101, 101);
 }
+
+@media (max-width: 900px) {
+
+  .Go{
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+  }
+  .poketv{
+    margin-left: 60px;
+    width: 150px;
+    height: 150px;
+  }
+  .pokerush{
+    margin-left: 90px;
+    width: 150px;
+    height: 150px;
+  }
+  .pokequest{
+    margin-left: 120px;
+    width: 150px;
+    height: 150px;
+  }
+  #poke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: rgb(0, 255, 170);
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  #poke:hover{
+    cursor: pointer;
+    color: white;
+    scale: 1.1;
+    background-color: rgb(101, 101, 101);
+  }
+.A1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: wrap;
+}
+.A2{
+  display: flex;
+}
+.A3{
+  display: flex;
+}
+.A4{
+  display: flex;
+}  
+
+}
