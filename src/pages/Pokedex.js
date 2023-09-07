@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getPokemonList } from '../components/api';
+import Pagination from '../components/Paginacion';
 
 import '../styles/Stylepoke.css'
 
@@ -7,11 +8,14 @@ function Pokedex() {
   
   const [Pokemons, setPokemons] = useState([]);
   const [isLoading, setisLoading] = useState(false);
-  const [loves, setLoves] = useState (0);
-    
-  const handleLoves = () => { 
+  const [newFavorite, setNewFavorites] = useState (false);
+
+
+
+
+  const handleFavorite = () => { 
       
-  setLoves(loves +1);
+  setNewFavorites(newFavorite = true);
   };
     
     useEffect(() => {
@@ -19,7 +23,6 @@ function Pokedex() {
         try {
 
          const url = "https://pokeapi.co/api/v2/pokemon?Limit=20"
-         const fetchedPokemons = [];
          const response= await getPokemonList(url);
          const data=response.array
          
@@ -33,12 +36,23 @@ function Pokedex() {
       fetchPokemon();
       
     },[]);
+
+
+
+
  
     return (
 
       <div className="contenedor">
+    <div className='input'>
+      <input className='input-style' 
+      type='search' 
+      placeholder='Busqueda Pokémon'></input>
+      <button className='busqueda'>Busqueda</button>   
+    </div>
+
           {isLoading ? (
-          Pokemons.map((item) => {
+            Pokemons.map((item) => {
               
     return (
       <div className='Card' key={item}>
@@ -46,12 +60,14 @@ function Pokedex() {
       <div className="flip-card-inner">
       <div className="flip-card-front">
       <img className="img" src={item.image} ></img>
-      <p className='name'>{item.name}</p>
+      <h1 className='name'>{item.name}</h1>
+      <h3 className='tipo'>{item.type}</h3>
       </div>
       <div className="flip-card-back">
-      <p className='name'>{item.id}</p>
+      <p className='name'>#{item.id}</p>
         <div>
-          <button onClick={handleLoves}>{loves} {loves ===1? 'Love♥':'Loves♥'}</button>
+          <button onClick={handleFavorite}>{newFavorite} {newFavorite === true ? '⭐':`Añadir Favoritos`}</button>
+         
         </div>
       </div>
     </div>
@@ -64,8 +80,9 @@ function Pokedex() {
     <h2 className='loading'>Esta Cargando...</h2>
   )}
 </div>
- 
+
   )
 }
 
 export default Pokedex;
+

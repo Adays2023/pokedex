@@ -41,10 +41,22 @@ export async function getPokemonList (url) {
             id,
             name:data.name,
             image:data.sprites.other["official-artwork"]["front_default"],
-            type:data.name
+            height:data.height,
+            type:data.types.map((item) => item.type.name + " ")
+
+            
         }
     } catch (error) {
       console.error (" Error capturando el detalle", error);
       throw error;  
     }
  }
+
+
+
+ export const buscarPoke =async (name) => {
+    const response = await fetch (`https://pokeapi.co/api/v2/pokemon/${name}/`)
+    return await response.json();
+ }
+
+ 
