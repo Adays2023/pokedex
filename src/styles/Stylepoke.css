@@ -1,3 +1,118 @@
+/* /////////COLOR BY TYPES//////////////// */
+:root {
+  --clr-black: #1c1c1c;
+  --clr-gray: #ececec;
+  --cl-white: #f7f7f7;
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-grass: #78c850;
+  --type-electric: #f8d030;
+  --type-ice: #98d8d8;
+  --type-figthing: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038f8;
+  --type-steel: #b8b8d0;
+  --type-fairy: #f0b6bc;
+}
+ /* //////////////////////////TYPES CLASSES///////////////////// / */
+.normal {
+  background-color: var(--type-normal);
+  color: var(--clr-black);
+  
+}
+.fire {
+  background-color: var(--type-fire);
+  color: var(--cl-white);
+}
+.water {
+  background-color: var(--type-water);
+  color: var(--cl-white);
+}
+.grass {
+  background-color: var(--type-grass);
+  color: var(--cl-white);
+  
+}
+.electric {
+  background-color: var(--type-electric);
+  color: var(--cl-white);
+}
+.ice {
+  background-color: var(--type-ice);
+  color: var(--cl-white);
+}
+.fighting {
+  background-color: var(--type-figthing);
+  color: var(--cl-white);
+}
+.poison {
+  background-color: var(--type-poison);
+  color: var(--cl-white);
+}
+.ground {
+  background-color: var(--type-ground);
+  color: var(--cl-white);
+}
+.flying {
+  background-color: var(--type-flying);
+  color: var(--cl-white);
+}
+.psychic {
+  background-color: var(--type-psychic);
+  color: var(--cl-white);
+}
+.bug {
+  background-color: var(--type-bug);
+  color: var(--cl-white);
+}
+.rock {
+  background-color: var(--type-rock);
+  color: var(--cl-white);
+}
+.dark {
+  background-color: var(--type-dark);
+  color: var(--cl-white);
+}
+.ghost {
+  background-color: var(--type-ghost);
+  color: var(--cl-white);
+}
+.dragon {
+  background-color: var(--type-dragon);
+  color: var(--cl-white);
+}
+.steel {
+  background-color: var(--type-steel);
+  color: var(--cl-white);
+}
+.fairy {
+  background-color: var(--type-fairy);
+  color: var(--cl-white);
+}
+/* / //////////////////////////TYPES CLASSES/////////////////////  */
+#type {
+  padding: 7px ;
+  border-radius: 15px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+
+}
+.poke-tipos {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .contenedor{
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +206,30 @@ button{
     border-color: #0dff00;
     box-shadow: 0 0 0 0.2rem #a0ff9b;
 }
+
+@media (max-width: 900px) {
+
+.input{
+    display: flex;
+    justify-content: center;
+    margin-right: 800px;
+  }
+button {
+    margin-right: 50px;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #3e3e3e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }  
+
+}
   
 .busqueda{
   margin-left: 5px;
@@ -111,7 +250,7 @@ button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  
- button::before {
+button::before {
   content: '';
   width: 0;
   height: 40px;
@@ -128,5 +267,17 @@ button {
  button:hover::before {
   width: 9em;
  }
-.tipo{
+.next{
+  height: 30px;
+  width: 40px;
+  margin-right: 3px;
+}
+.next:hover{
+  scale: 1.2;
+}
+.delete{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
 }

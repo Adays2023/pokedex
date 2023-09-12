@@ -1,17 +1,19 @@
 import React from "react";
 
-function Pagination (Next)  {
-  const [leftClick, rightClick, pagina, totalPages ] = Next;
+function Paginacion({ limit, totalPokemons, updatePage }) {
+  const totalButtons = Math.ceil(totalPokemons / limit);
+  const buttons = [];
+  function createButtons() {
+    for (let i = 0; i < totalButtons; i++) {
+      buttons.push(
+        <button key={i} value={i} className="next" onClick={updatePage}>
+          {i + 1}
+        </button>
+      );
+    }
+    return buttons
+  }
+  return <div>{createButtons()}</div>;
+}
 
-  return (
-  
-    <div className="Next">
-      <button className="boton-Pagi" onClick={leftClick}>Go Back</button>
-      
-      <button className="boton-Pagi" onClick={rightClick}>Next</button>
-    </div>
-
-  );
-};
-
-export default Pagination;
+export default Paginacion;
